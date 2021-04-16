@@ -18,16 +18,86 @@ li{
     position: fixed;
     width: 100%;
     min-width: 768px;
-    height: 4em;
+    height: 54.33px;
     background-color: #fff;
     z-index: 3000;
 }
 .header-inner{
-    width: 65%;
-    height: 4em;
-    margin: 0 auto;
+    display: inline-block;
+    width: 25%;
+    height: 54.33px;
+    margin: 0 15%;
     background-color: #fff;
 }
+.search-form-wrapper{
+    position: absolute;
+    top: 0;
+    right: 17%;
+    display: inline-block;
+    width: 225px;
+    height: 100%;
+}
+.search-form{
+    width: 100%;
+    height: 100%;
+    padding: 6.17px 0;
+}
+.search-form-wrapper input{
+    width: 187px;
+    height: 38px;
+    border: none;
+    padding: 4px 16px;
+    
+    border-radius: 5% 0 0 5%;
+    background-color: #f4f4f4;
+}
+.search-form-wrapper input:focus{
+    outline: none;
+}
+.search-form-wrapper input:focus + button::after{
+    background-color: #0092e3;
+}
+.search-form-wrapper input:focus + button::before{
+    border:2px solid #0092e3;
+}
+.search-form-btn{
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    background-color: #f4f4f4;
+    border: none;
+    outline: none;
+    
+}
+.search-form-btn::before{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border: 2px solid #354858;
+    top: 10px;
+    right: 13px;
+    border-radius: 100%;
+    transition: all .5s ease-in-out;
+}
+.search-form-btn::after{
+    content: "";
+    position: absolute;
+    background: #354858;
+    height: 7px;
+    width: 2px;
+    right: 12px;
+    bottom: 10px;
+    transform: rotate(-45deg);
+    transition: all .5s ease-in-out;
+}
+.search-form-btn:hover{
+    cursor: pointer;
+}
+
+
+
+
 nav{
     position: fixed;
     top: 50px;
@@ -89,7 +159,9 @@ nav{
 
 .content{
     width: 100%;
-    margin-top: 100px;
+    max-width: 1200px;
+    margin: 82px auto 0;
+    padding: 32px;
     position: relative;
  }
 
@@ -98,7 +170,7 @@ nav{
     max-width: 1136px;
     width: 100%;
     
-    margin: 30px auto 20px;
+    margin: 0 auto 20px;
 }
 
 .swap-box{
@@ -284,28 +356,26 @@ nav{
 
 
 .subscribe-box~.section-card::before{
-    padding-top: 55%;
+    padding-top: 0;
 }
+
 .grid{
-    position: absolute;
-    top: 46px;
-    left: 16px;
     width: 100%;
     max-width: 1120px;
-    padding-top: 52%;
-    margin: -8px;
-    display: flex;
-}
-.cards-contain{
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    width: 27%;
-    max-width: 260px;
-    padding-top: 23.6%;
+    height: 100%;
+    min-height: 600px;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
+    justify-content: space-between;
+    align-content: space-around;
+}
+.cards-contain{
+    width: 24%;
+    height: 100%;
+    max-height: 268px;
+    max-width: 264px;
+    display: flex;
+    flex-direction: column; 
     background-color: #fff;
 }
 .cards-contain:hover{
@@ -318,27 +388,23 @@ nav{
     color:#0092e3;
 }
  .cards-box{
-    position: absolute;
-    top: 0;
-    left: 0;
+    min-height: 70%;
     width: 100%;
-    padding-top: 72%;
+    
     
 } 
 
 .cards{
-    position: absolute;
-    top: 0;
-    left: 0;
+    
     width: 100%;
     height: 100%;
+    max-height: 187px;
     overflow: hidden;
 }
 
 
 .text{
-    position: absolute;
-    top: 72%;
+    height: min-content;
     padding: 12px;
     background-color: #fff;
 }
@@ -346,8 +412,7 @@ nav{
 .cards-contain h2{
     font-size: 16px;
     font-weight: bold;
-    height: 100%;
-    top:0;
+    height: min-content;
 }
 
 
