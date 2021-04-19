@@ -11,6 +11,11 @@
 
 <body>
     <header class="header">
+        <button class="mobile-nav-open" onclick="mobileOpen()">
+            <i class="icon icon-burger">
+
+            </i>
+        </button>
         <div class="header-inner">
             <div class="header-logo-title-wrapper" id="header-logo-title-wrapper">
                 <div class="header-logo">
@@ -58,60 +63,8 @@
                         </svg> </a>
 
                 </div>
-                <!-- <div class="header-title">
-                        <h1 class="" title="Quiz: HowStuffWorks">
-                            Quiz: HowStuffWorks
-                        </h1>
-                    </div> -->
             </div>
-            <!-- <div class="header-search-social-wrapper" id="header-search-social-wrapper">
 
-
-                    <div class="search-form-wrapper">
-                        <form class="search-form" action="/search" method="get" target="_self">
-                            <div class="search-form-input-wrapper">
-                                <input type="search" aria-label="search" placeholder="Search" name="q">
-                            </div>
-                            <button class="search-form-btn">
-                                <i class="icon icon-search" role="presentation" aria-label="Search Icon"></i>
-                            </button>
-                        </form>
-                    </div>
-
-
-                    <ul class="header-social-links">
-                        <li>
-                            <a href="https://www.facebook.com/HowStuffWorks" class="social-link social-link-facebook"
-                                title="facebook">
-                                <i class="icon icon-facebook" role="presentation" aria-label="facebook Icon"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/intent/follow?source=followbutton&amp;amp;variant=1.0&amp;amp;screen_name=HowStuffWorks"
-                                class="social-link social-link-twitter" title="twitter">
-                                <i class="icon icon-twitter" role="presentation" aria-label="twitter Icon"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.pinterest.com/HowStuffWorks/" class="social-link social-link-pinterest"
-                                title="pinterest">
-                                <i class="icon icon-pinterest" role="presentation" aria-label="pinterest Icon"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/HowStuffWorks" class="social-link social-link-youtube"
-                                title="youtube">
-                                <i class="icon icon-youtube" role="presentation" aria-label="youtube Icon"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.howstuffworks.com/newsletter.htm" class="social-link social-link-email"
-                                title="email">
-                                <i class="icon icon-email" role="presentation" aria-label="email Icon"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div> -->
 
         </div>
         <div class="search-form-wrapper">
@@ -125,8 +78,96 @@
         </div>
     </header>
 
-    <nav>
+    <nav class="nav">
         <ul class="header-nav">
+            <li><a href="#">Animals</a></li>
+            <li><a href="#">Cars,Trucks & Engines</a></li>
+            <li><a href="#">TV,Film & Music</a></li>
+            <li><a href="#">All About You!</a></li>
+            <li><a href="#">Love & Relationships</a></li>
+            <li><a href="#">Sports Trivia</a></li>
+            <li><a href="#">General Trivia</a></li>
+            <li><a href="#">The World</a></li>
+        </ul>
+    </nav>
+    <nav class="nav-mobile" id="nav-mobile">
+        <div class="close-box">
+            <button class="close-btn" onclick="mobileClose()">
+                <i class="icon icon-close"></i>
+            </button>
+        </div>
+
+
+        <div class="header-logo-title-wrapper" id="header-logo-title-wrapper">
+            <div class="header-logo">
+                <a href="/" title="Quiz: HowStuffWorks Home" class="logo" style="width:308px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 40" enable-background="new 0 0 240 40">
+                        <g transform="translate(151.877 .338)">
+                            <defs>
+                                <filter filterUnits="userSpaceOnUse" x="-31.5" y="1.5" width="11.8" height="14.3">
+                                    <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0">
+                                    </feColorMatrix>
+                                </filter>
+                            </defs>
+                            <mask maskUnits="userSpaceOnUse" x="-31.5" y="1.5" width="11.8" height="14.3">
+                                <path class="st1" d="M-31.5 1.5h11.8v14.3h-11.8z" fill-rule="evenodd"
+                                    clip-rule="evenodd" fill="#fff" filter="url(#a)"></path>
+                            </mask>
+                            <path
+                                d="M-28 15.8V15c0-4.3 4.5-4.8 4.5-8 0-1.5-1-2.1-2.2-2.1-1.5 0-2.3 1-2.3 2.5v.3h-3.6c0-3.8 2.3-6.1 6-6.1 3 0 5.8 1.7 5.8 5.4 0 4.6-4.7 5.1-4.7 8.3v.6H-28z"
+                                mask="url(#b)" fill-rule="evenodd" clip-rule="evenodd" fill="#03223b"></path>
+                        </g>
+                        <g transform="translate(0 10.95)">
+                            <defs>
+                                <filter filterUnits="userSpaceOnUse" x="6.1" y="-.9" width="10.8" height="19.9">
+                                    <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0">
+                                    </feColorMatrix>
+                                </filter>
+                            </defs>
+                            <mask maskUnits="userSpaceOnUse" x="6.1" y="-.9" width="10.8" height="19.9">
+                                <path class="st1" d="M6.1-.9h10.7v19.8H6.1z" fill-rule="evenodd" clip-rule="evenodd"
+                                    fill="#fff" filter="url(#c)"></path>
+                            </mask>
+                            <path
+                                d="M6.1-.9h3.1V9c1-1.3 2-1.9 3.5-1.9 1.3 0 2.5.5 3.3 1.4.7.8.9 1.6.9 3.2v7.2h-3.1v-6.3c0-2-.6-2.8-2.1-2.8-1.6 0-2.4 1-2.4 3.2v5.9H6.1V-.9z"
+                                mask="url(#d)" fill-rule="evenodd" clip-rule="evenodd" fill="#03223b"></path>
+                        </g>
+                        <path class="st5"
+                            d="M34.8 18.4l2.9 6.6 3.1-6.9h1.3l3.1 7 3-6.7h3.5l-5.8 11.7h-1.5l-3-7-3 7H37l-5.7-11.7zm67.7 0l3 6.6 3-6.9h1.4l3 7 3-6.7h3.5l-5.8 11.7h-1.4l-3-7-3 7h-1.4L99 18.4zm31.3 0h3.1v1.7c.8-1.4 1.8-2.1 3.3-2.1.5 0 .8.1 1.3.3l-.4 3c-.6-.3-.9-.4-1.5-.4-1.8 0-2.7 1.1-2.7 3.4v5.5h-3.1V18.4zm11.9-8.4v12.6l4.2-4.2h4.2l-5.2 5 5.7 6.5h-4.3l-4.2-5-.4.4v4.6h-3.1V10zm17.3 9.2l-1.5 1.9c-.7-.5-1.2-.8-1.9-.8s-1.2.4-1.2 1 .3.8 1.8 1.3c2.6 1 3.4 1.8 3.4 3.6 0 2.4-1.9 4.1-4.7 4.1-1.6 0-3.2-.7-4.3-1.9l1.7-2c.9.9 1.7 1.4 2.6 1.4.8 0 1.4-.5 1.4-1.2s-.3-.9-1.7-1.5c-2.6-1-3.3-1.6-3.3-3.4 0-2.2 1.7-3.7 4-3.7 1.5 0 2.6.3 3.7 1.2m-141 5c0 1.7 1.4 3.2 3.1 3.2 1.8 0 3.2-1.4 3.2-3.2 0-1.8-1.4-3.2-3.2-3.2-1.7-.1-3.1 1.4-3.1 3.2m-3.3 0c0-3.6 2.6-6.1 6.4-6.1 3.8 0 6.4 2.5 6.4 6.1 0 3.6-2.6 6.1-6.4 6.1-3.8-.1-6.4-2.5-6.4-6.1"
+                            fill-rule="evenodd" clip-rule="evenodd" fill="#03223b"></path>
+                        <path class="st5"
+                            d="M22 24.2c0 1.7 1.4 3.2 3.1 3.2 1.8 0 3.2-1.4 3.2-3.2 0-1.8-1.4-3.2-3.2-3.2-1.7-.1-3.1 1.4-3.1 3.2m-3.3 0c0-3.6 2.6-6.1 6.4-6.1 3.8 0 6.4 2.5 6.4 6.1 0 3.6-2.6 6.1-6.4 6.1-3.8-.1-6.4-2.5-6.4-6.1m103.7 0c0 1.7 1.4 3.2 3.1 3.2 1.8 0 3.2-1.4 3.2-3.2 0-1.8-1.4-3.2-3.2-3.2-1.7-.1-3.1 1.4-3.1 3.2m-3.2 0c0-3.6 2.6-6.1 6.4-6.1 3.8 0 6.4 2.5 6.4 6.1 0 3.6-2.6 6.1-6.4 6.1-3.8-.1-6.4-2.5-6.4-6.1m-58.9-5l-1.5 1.9c-.7-.5-1.2-.8-1.9-.8s-1.2.4-1.2 1 .3.8 1.8 1.3c2.6 1 3.4 1.8 3.4 3.6 0 2.4-1.9 4.1-4.7 4.1-1.6 0-3.2-.7-4.3-1.9l1.7-2c.9.9 1.7 1.4 2.6 1.4.8 0 1.4-.5 1.4-1.2s-.3-.9-1.7-1.5c-2.6-1-3.3-1.6-3.3-3.4 0-2.2 1.7-3.7 4-3.7 1.4 0 2.6.3 3.7 1.2m6.1 2v8.7h-3.1v-8.7h-1.2v-2.8h1.2v-3.9h3.1v3.9h2.2v2.8zm7-2.8v6.5c0 1.7.8 2.6 2.3 2.6 1.5 0 2.3-.9 2.3-2.6v-6.5h3v7c0 3.1-2 4.8-5.4 4.8-3.5 0-5.4-1.7-5.4-4.8v-7h3.2zm13.9 2.8v8.7h-3.1v-8.7H83v-2.8h1.2v-3.7c0-2 .4-3 1.5-3.9.8-.7 1.8-1.1 2.9-1.1.6 0 .9.1 1.7.4V13c-.7-.4-1-.4-1.4-.4-1 0-1.4.7-1.4 2.6v3.2h2.9v2.8h-3.1zm8.1 0v8.7h-3.1v-8.7h-1.2v-2.8h1.2v-3.7c0-2 .4-3 1.5-3.9.8-.7 1.8-1.1 2.9-1.1.6 0 .9.1 1.7.4V13c-.7-.4-1-.4-1.4-.4-1 0-1.4.7-1.4 2.6v3.2h2.9v2.8h-3.1z"
+                            fill-rule="evenodd" clip-rule="evenodd" fill="#03223b"></path>
+                        <path
+                            d="M178.6 30c0 .2-.5.4-1.4.5-1 .1-1.9.2-2.9.2s-1.6-.1-1.8-.2c-.3-.1-.4-.3-.4-.5V14.7c0-.8 2.3-1.1 6.8-1.1 2.7 0 4.5.2 5.4.6 1.1.4 1.8 1 2.2 1.8.5 1 .8 2.2.8 3.8 0 2.1-.4 3.6-1.1 4.6-.5.7-1 1.1-1.5 1.4-.5.2-.9.4-1.3.4-.3.1-.8.2-1.3.2-.7.1-1.6.1-2.8.1h-.6V30zm-.5-7.6h.6c.3 0 .5 0 .7-.1.2-.1.3-.3.5-.7.1-.4.2-.9.2-1.6s-.1-1.2-.2-1.6-.3-.6-.4-.7c-.1-.1-.3-.1-.5-.1h-.7v4.8zm13.2 8.3c-.8 0-1.3 0-1.6-.1-.3-.1-.4-.2-.4-.4V15.3c0-.3.5-.7 1.4-1 .9-.3 1.9-.5 3.1-.5 1 0 1.7.2 2 .6.1.2.2.3.2.5v10.5c1.9-.1 3.3-.2 4.3-.2.3 0 .5.5.5 1.6s-.1 2-.2 2.7c-.1.8-.3 1.1-.6 1.1h-8.7zm17.7-.3c-.4.2-1.2.3-2.4.3s-2.1-.1-2.9-.3c-.8-.2-1.2-.5-1.2-.8 0-.4.7-2.8 2.1-7.3s2.2-7 2.4-7.7c.1-.2.7-.4 1.9-.5 1.2-.1 2.4-.2 3.8-.2s2.1.2 2.2.7c3 9.9 4.4 15 4.4 15.2 0 .2-.1.3-.3.5-.4.3-1.3.5-2.6.5-2.8 0-4.2-.3-4.2-1l-.2-1.5h-2.3l-.1 1.3c.1.3-.1.6-.6.8zm2.6-6.8l-.4-4.3h-.5l-.4 4.3h1.3zm16.2 6.9c-1 .1-1.9.2-2.9.2s-1.6-.1-1.8-.2c-.3-.1-.4-.3-.4-.5v-4.1c-3.1-6.4-4.6-9.9-4.6-10.5 0-.3.5-.7 1.6-1 1-.4 2.2-.5 3.3-.5 1.5 0 2.3.4 2.4 1.3l.6 6.4h.3l.4-6.2c0-.4.6-.8 1.7-1.1 1.1-.3 2.1-.4 3.1-.4s1.6.1 2 .4.6.6.6.9c0 .3-1.6 3.9-4.7 10.7V30c-.2.2-.7.4-1.6.5z"
+                            fill-rule="evenodd" clip-rule="evenodd" fill="#0092e3"></path>
+                    </svg> </a>
+
+            </div>
+        </div>
+
+        <div class="search-form-wrapper-mobile">
+            <div class="search-form-mobile">
+
+                <input type="search" placeholder="Search">
+
+                <button class="search-form-btn-mobile"></button>
+
+            </div>
+        </div>
+        <ul class="header-nav-mobile">
+            <li><a href="#">Animals</a></li>
+            <li><a href="#">Cars,Trucks & Engines</a></li>
+            <li><a href="#">TV,Film & Music</a></li>
+            <li><a href="#">All About You!</a></li>
+            <li><a href="#">Love & Relationships</a></li>
+            <li><a href="#">Sports Trivia</a></li>
+            <li><a href="#">General Trivia</a></li>
+            <li><a href="#">The World</a></li>
+        </ul>
+
+        <hr>
+        <ul class="header-nav-mobile">
             <li><a href="#">Animals</a></li>
             <li><a href="#">Cars,Trucks & Engines</a></li>
             <li><a href="#">TV,Film & Music</a></li>

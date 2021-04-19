@@ -72,3 +72,13 @@ var last = () => {
         }
     }, 1)
 }
+
+var mobileOpen = () => {
+    var navMobile = document.getElementById("nav-mobile");
+    navMobile.style.left = 0;
+}
+
+var mobileClose = () => {
+    var navMobile = document.getElementById("nav-mobile");
+    navMobile.style.left = "-50%";
+}
